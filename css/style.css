@@ -1,0 +1,51 @@
+
+a, a:link, a:visited, a:active, a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+a {
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+.background-blue{
+  background: blue;
+}
+
+.starterPage{
+  height: 100vmin;
+  width: 100%;
+  position: relative;
+}
+
+.custom-header{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  z-index: 5000;
+  transition: all 0.33s ease-out;
+  -webkit-transition: all 0.33s ease-out;
+}
+
+.custom-header .header{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 1430px;
+  width: 100%;
+  height: inherit;
+  transition: all 0.33s ease-out;
+  -webkit-transition: all 0.33s ease-out;
+}
