@@ -9,54 +9,84 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <!-- metadata -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="HandheldFriendly" content="true">
 
     <meta charset="utf-8">
   </head>
   <body>
-    <!-- loading before page shows so images show elegantly -->
-    <div class="loader">
-
-    </div>
-    <div class="custom-header">
+    <!-- <div class="breadcrumber">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+    </div> -->
+    <div class="custom-header force_position" >
       <div class="header custom-header">
-        <nav class="navbar navbar-light navbar-expand-lg bg_gradient_green-FADE">
+          <nav id="starterNav" class="navbar navbar-light navbar-expand-lg background_transparent">
           <a class="navbar-brand text_black" href="#">
             <img src="includes/img/black_cutlery.png" id="header-logo" width="30" height="30" class="d-inline-block  align-top" alt="">
             FoodForAll
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button id="toggler_icon" class="navbar-toggler navbar-toggler_icon" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <!-- <a class="nav-item nav-link" href="#">About</a>
-              <a class="nav-item nav-link" href="#">Register</a>
-              <a class="nav-item nav-link" href="#">Contact</a> -->
+              <a id="navItem_home" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              <a id="navItem_contact" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-item nav-link" href="#contact">Contact</a>
             </div>
           </div>
         </nav>
-
       </div>
     </div>
 
-    <div class="container-fluid background_blue starterPage">
-      <h1 class="mainHeading animated fadeIn">Food For <i class="noI"> All</i></h1>
-      <!-- <img class="big_logo"  src="includes/img/white_cutlery.png" alt=""> -->
-      <img id="BANBER-IMAGE" src="includes/img/white_cutlery.png" class="animated fadeIn	 rounded mx-auto d-block banber" alt="...">
+    <!-- Home -->
+    <div class="container-fluid background_blue starterPage home">
+      <h1 class="mainHeading animated fadeIn">Food For All</h1>
+      <img id="BANBER-IMAGE" src="includes/img/white_cutlery.png" class="animated fadeIn	 rounded mx-auto d-block banber" alt="">
     </div>
-    <div class="container-fluid background_black secondPage">
-      <h1 class="mainHeading animated fadeIn text_black">Everyone Deserves Food</h1>
-      <!-- <img class="big_logo"  src="includes/img/white_cutlery.png" alt=""> -->
-      <img id="" src="includes/img/black_cutlery.png" class="animated fadeIn	 rounded mx-auto d-block banber" alt="...">
+    <div class="container-fluid background_white">
+
     </div>
-    <div class="container-fluid background_white thirdPage">
-      <h1 class="mainHeading animated fadeIn text_black">Stop Food Wastage</h1>
-      <!-- <img class="big_logo"  src="includes/img/white_cutlery.png" alt=""> -->
-      <img id="" src="includes/img/green_cutlery.png" class="animated fadeIn	 rounded mx-auto d-block banber" alt="...">
+
+    <div class="container-fluid background_blue fullscreen contactPage animated fadeIn contact">
+      <h1 class="mainHeadingContact animated text_black">Contact Us</h1>
+      <p class="contactBlurb text_black">
+        <span> If you have want to donate, discuss or just simply say hey, our communication channel is always open at</span>
+        <a class=" text_black " href="#"> foodforall@gmail.com </a>
+      </p>
+      <div class="card text-cente ">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="container form_iFrame">
+      	<div class="row">
+      		<div id="loader">
+          		<div class="dot"></div>
+      			<div class="dot"></div>
+      			<div class="dot"></div>
+      			<div class="dot"></div>
+      			<div class="dot"></div>
+      			<div class="dot"></div>
+      			<div class="dot"></div>
+      			<div class="dot"></div>
+      			<div class="lading"></div>
+      		</div>
+      	</div>
+      </div>
+      <iframe class="contactBlurb " src="https://docs.google.com/forms/d/e/1FAIpQLSeoGiZ3BKBjZw1FrwB77dKKzDVts5AFx-6nSKS_018ONBa45g/viewform?embedded=true" width="640" height="1501" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <img id="" src="includes/img/green_cutlery.png" class="animated fadeIn	 rounded mx-auto d-block banber" alt="">
     </div>
+
   </body>
 </html>

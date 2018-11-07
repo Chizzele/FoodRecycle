@@ -1,6 +1,8 @@
 
 body, html{
   font-family: 'Dosis', sans-serif;
+  background: -webkit-linear-gradient(to right, #38ef7d78, #11998ea8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d78, #11998ea8);
 }
 
 a, a:link, a:visited, a:active, a:hover {
@@ -27,6 +29,10 @@ body *{
   color: black !important;
 }
 
+.text_blue{
+
+}
+
 .boxShadow{
   box-shadow: 0px 1px 1px 1px;
   background: #0000000a;
@@ -41,9 +47,16 @@ h1.mainHeading{
   padding-top: 14vmin;
 }
 
+h1.mainHeadingContact{
+  text-align: center;
+  letter-spacing: 0px;
+  color: white;
+  padding-top: 24vmin;
+}
+
 /* Background Colors */
 .bg_gradient_green{
-  background: #11998e;  /* fallback for old browsers */
+  background: #11998e ;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -58,6 +71,10 @@ h1.mainHeading{
   background: black;
 }
 
+.background_transparent{
+  background: transparent !important;
+}
+
 .background_white{
   background: white !important;
 }
@@ -69,6 +86,16 @@ a {
 
 .background_blue{
   background: blue;
+}
+/* dmkdkdkdkkddkdkdkdkddkdkdkkddkkdkd */
+
+.contactPage{
+  height: 100vmin;
+  width: 100%;
+  position: relative;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .starterPage{
@@ -125,17 +152,27 @@ a {
     bottom: 0px;
   }
   .secondPage:hover{
-    margin-top: -50px;
+    /* margin-top: 50px; */
   }
   .thirdPage:hover{
     margin-top: -50px;
   }
-
-
+  .force_position{
+    position: absolute !important;
+  }
+  .contactBlurb{
+    width: 60% !important;
+    left: 20% !important;
+    text-align: center;
+  }
   .banber{
     background-image: url("../includes/img/white_cutlery.png");
     width:auto !important;
   }
+}
+
+.force_position{
+  position: fixed;
 }
 
 .banber{
@@ -170,7 +207,157 @@ a {
   float: right;
 }
 
-.noI{
+i.noI{
   text-decoration: none;
   font-style: normal;
+}
+
+.fullscreen{
+  height: 100vh;
+  width: 100vw;
+}
+
+.breadcrumber{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+}
+
+.contactBlurb{
+  width: 80%;
+  left: 10%;
+  position: inherit;
+}
+
+.form_iFrame{
+  display: none;
+}
+
+
+
+
+
+#loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+}
+#loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+}
+#loader .dot {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 87.5px;
+}
+#loader .dot::before {
+    border-radius: 100%;
+    content: "";
+    height: 87.5px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0);
+    width: 87.5px;
+}
+#loader .dot:nth-child(7n+1) {
+    transform: rotate(45deg);
+}
+#loader .dot:nth-child(7n+1)::before {
+    animation: 0.8s linear 0.1s normal none infinite running load;
+    background: #00ff80 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+2) {
+    transform: rotate(90deg);
+}
+#loader .dot:nth-child(7n+2)::before {
+    animation: 0.8s linear 0.2s normal none infinite running load;
+    background: #00ffea none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+3) {
+    transform: rotate(135deg);
+}
+#loader .dot:nth-child(7n+3)::before {
+    animation: 0.8s linear 0.3s normal none infinite running load;
+    background: #00aaff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+4) {
+    transform: rotate(180deg);
+}
+#loader .dot:nth-child(7n+4)::before {
+    animation: 0.8s linear 0.4s normal none infinite running load;
+    background: #0040ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+5) {
+    transform: rotate(225deg);
+}
+#loader .dot:nth-child(7n+5)::before {
+    animation: 0.8s linear 0.5s normal none infinite running load;
+    background: #2a00ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+6) {
+    transform: rotate(270deg);
+}
+#loader .dot:nth-child(7n+6)::before {
+    animation: 0.8s linear 0.6s normal none infinite running load;
+    background: #9500ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+7) {
+    transform: rotate(315deg);
+}
+#loader .dot:nth-child(7n+7)::before {
+    animation: 0.8s linear 0.7s normal none infinite running load;
+    background: magenta none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+8) {
+    transform: rotate(360deg);
+}
+#loader .dot:nth-child(7n+8)::before {
+    animation: 0.8s linear 0.8s normal none infinite running load;
+    background: #ff0095 none repeat scroll 0 0;
+}
+#loader .lading {
+    background-image: url("../images/loading.gif");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    bottom: -40px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 180px;
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+.underline{
+  text-decoration: underline;
 }
