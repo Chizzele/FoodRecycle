@@ -13,6 +13,10 @@ $('document').ready(function(){
   $(window).resize(function(){
     validateWindowSize($(window).width());
   });
+
+  $('#showForm').click(function(e){
+    $('#formIframe-desktop').show();
+  });
   $('#navItem_contact').click(function(e){
     // navigate((this.id == "navItem_contact") ?  "home" : "contact" , "contact");
     $('.contact').show();
